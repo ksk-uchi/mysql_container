@@ -1,0 +1,9 @@
+version: '2'
+services:
+    mysql:
+        build:
+            context: .
+        ports:
+            - 3306:3306
+        volumes:
+            - ./mysql_conf:/etc/mysql/conf.d
